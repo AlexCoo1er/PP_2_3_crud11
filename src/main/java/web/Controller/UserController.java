@@ -15,9 +15,9 @@ public class UserController {
     private final UserService userService;
 
     @Autowired
-    public UserController(UserService service) {
+    public UserController(UserService userService) {
 
-        this.userService = service;
+        this.userService = userService;
     }
 
     @GetMapping(value = "/all")
